@@ -1,0 +1,12 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let elements = document.querySelectorAll('.showpopup');
+        let popupposts = ['31886']; // Enter your popups IDs here, in the order you want them to show up
+
+        elements.forEach(function (e, i) {
+            e.addEventListener('click', function () {
+                elementorProFrontend.modules.popup.showPopup({ id: popupposts[i] });
+            });
+        });
+    });
+</script>
